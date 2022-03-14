@@ -1,0 +1,73 @@
+.warp{
+    margin: 0 auto;
+    width: 1000px;
+}
+.header{
+    height: 107px;
+    background: red;
+    margin-bottom: 20px;
+}
+.header ul{
+    float: right;
+}
+.header ul li{
+    float: left;
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+}
+.header ul li a{
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.leftmenu{
+    width: 190px;
+    background: black;
+    color: #fff;
+    float: left;
+    margin-right: 20px;
+
+}
+.content{
+    width: 680px;
+    background: pink;
+    float: left;
+    margin-right: 20px;
+}
+.rightmenu{
+    width: 90px;
+    background: gray;
+    float: left;
+}
+.clearfix{ /*用div成為一道牆，這個div以下的不受到float影響*/
+    clear: both;
+    margin-bottom: 20px;
+}
+.footer{
+    height: 50px;
+    background: royalblue;
+    margin-bottom: 20px;
+}
+.father{
+    padding: 30px;
+    background: blueviolet;
+}
+.sonleft{
+    height: 300px;
+    width: 100px;
+    background: green;
+    float: left;
+}
+.sonright{
+    height: 300px;
+    width: 100px;
+    background: lightcoral;
+    float: right;
+}
+.clearfix2:after{ /*清除浮動寫在父元素內的方法，讓HTML保持簡單易了*/
+    content:'';
+    display:table;
+    clear:both;
+  }
+  

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--方式一，隱藏文字-->
+   <h1 class="method1">
+       <a href="#" target="_block" title="hex school">hex school</a>
+   </h1>
+
+   <!--方式二，使用alt網路上說不會影響SEO(search engine optimization)搜尋引擎最佳化，有待考證-->
+   <h1>
+       <a href="#" target="_block" title="hex school">
+           <img src="https://i.imgur.com/9x39tU5.png" width="" height="" alt="hex school">
+        </a>
+    </h1>
+    <!--問題為什麼不能用a包h1-->
+    <a href="#" target="_block" title="hex school">
+        <h1 class="method3">
+        hex school
+        </h1>
+    </a>
+
+</body>
+</html>

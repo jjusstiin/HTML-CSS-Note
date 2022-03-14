@@ -1,0 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.warp{
+	width: 1002px;
+	margin: auto;
+}
+.bar1{
+	background:#f6f6f6;
+	height: 30px;
+}
+.bar1 ul{
+	float: right;
+	margin: 5px;
+}
+.bar1 li{
+	float: left;
+	margin-right: 10px;
+	}
+.bar1 li a{
+	text-decoration: none;
+	font-weight: 500;
+}
+.bar1 ul .facebook{
+	padding-right: 8px;
+	border-right: 1px solid #cccc;
+}
+.bar1 .facebook span{
+	color: #4460a0;
+}
+.bar1 .twitter span{
+	color: #00aaec;
+}
+.bar2 ul{
+    float: right;
+}
+.bar2 li{
+    float: left;		/* 使用float排版，要先撐開父元素容器，還要針對子元素設定 margin。 內容太多，高度不足就會跑版。*/
+    display: flex;		/*display 設置為 flex 的時候，如果子元素沒有設定高度，則子元素的高度會是其中最高的那個*/
+	margin-right: 10px; /*float + flex，將會以align-items默許為stretch*/
+    height: 50px;
+}
+.bar2 h1 a{
+    display: block;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 250px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.bar2 li a{
+    font-size: 16px;
+    color: #00cc99;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px;
+}
+.bar2 li a:hover{
+    border-bottom: 3px solid #00cc99;
+}
+.kanban{
+background-image: url(img/Banner.png);
+width: 1000px;
+height: 345px;    
+display: flex;
+align-items: center;
+}
+.kanban p{
+    color: #ffff;
+    font-size: 36px;
+    line-height: 50px;
+    background-color:rgba(0,0,0,0.2);
+    width: 1000px;
+    padding: 30px 0 30px 0;
+}
+/*加入動畫*/

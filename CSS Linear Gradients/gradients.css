@@ -1,0 +1,41 @@
+div {
+    height: 300px;
+    width: 1000px;
+    background-image: url(img/Banner.png);
+    /*background-image圖片無法跟 linear-gradient同時用，linear-gradient會附蓋過*/
+    background-repeat: no-repeat;
+}
+
+.pp {
+    height: 300px;
+    width: 1000px;
+    background-image: repeating-linear-gradient(190deg, red, yellow 7%, green 10%);
+    /*190deg(角度0deg為to top順時鐘，90deg為to right), red, yellow 7%(總長7%位置變黃色), green 10%*/
+}
+
+.jj {
+    height: 300px;
+    width: 1000px;
+    background: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px);
+    /*(沒有設定角度預設由上而下),#e66465(開始顏色), #e66465 20px(下個顏色出現位置，但因為是同色所以沒有漸層效果), #9198e5 20px, #9198e5 25px*/
+}
+
+.kkyy {
+    height: 300px;
+    width: 1000px;
+    background: repeating-linear-gradient(transparent, #4d9f0c 40px), repeating-linear-gradient(.25turn, transparent, #3f87a6 20px);
+    /*repeating-linear-gradient可以多角度融合在一起*/
+}
+
+.kk {
+    height: 300px;
+    width: 1000px;
+    background: repeating-linear-gradient(transparent, #4d9f0c 40px);
+}
+
+.yy {
+    height: 300px;
+    width: 1000px;
+    background: repeating-linear-gradient(.25turn, transparent, #3f87a6 20px);
+    /*.25turn(0turn=to top, .25turn=to right, .75turn=to left), transparent, #3f87a6 20px*/
+}

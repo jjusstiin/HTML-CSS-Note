@@ -1,0 +1,101 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.warp{
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    border: 5px solid gold;
+    position: relative;
+}
+.header{
+    width: 300px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    right: 0; /*對此區塊右邊沒有空間*/
+    top: 100px;  /*對此區塊上放有100px空間*/
+    z-index: 2;
+    
+}
+.content{
+    width: 300px;
+    height: 200px;
+    background: green;
+    position: absolute;
+    right: 0;
+    top: 200px;
+    z-index: 1;
+}
+.content2{
+    width: 300px;
+    height: 200px;
+    border: 1px solid purple;
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+}
+.footer{
+    width: 300px;
+    height: 200px;
+    border: 1px solid blue;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.box,.box2,.box3,.box4{
+    width: 100px;
+    height: 100px;
+    background: #000;
+    color: white;
+}
+.box4{
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+}

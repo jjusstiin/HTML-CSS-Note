@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    #banner {
+	position: relative;
+	width: 800px;
+	height: 168px;
+	margin: 0px auto;
+	overflow: hidden;
+	outline: 1px solid gray;
+    }
+
+    #bannerImage {
+    position: relative;
+	width: 1100px;
+	height: 168px;
+	background-image: url('./img/cloud.jpg');
+	background-repeat: repeat-x;
+    -webkit-animation: cloud linear 3S infinite; 
+    /* linear線性移動不會加減速 */
+    }
+    
+    @-webkit-keyframes cloud{
+        0%{ left: -300px;}
+        100%{left: 0px; }
+    }
+
+    #bannerText {
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	font-family: Arial;
+	font-style: italic;
+	font-size: 20px;
+	color: DarkBlue;   
+    }
+
+    #test {
+    width: 100px;
+    height: 100px;
+    background-color: Green;
+    animation: changeColor 10s 9999;
+    }
+       
+    @keyframes changeColor {
+    0% { background-color: Red;}
+    25% { background-color: Blue;width: 300px; }
+    50% { background-color: black;width: 500px;}
+    100% { background-color: Green; }
+    } 
+    </style>
+      </head>
+      <body>
+        <div id="banner">
+            <div id="bannerImage"></div>
+            <div id="bannerText">Rolling Clouds</div>
+        </div>
+      <div id="test"></div>
+</body>
+</html>

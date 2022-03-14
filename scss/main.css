@@ -1,0 +1,77 @@
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  outline: 1px black solid;
+}
+
+div .gray {
+  width: 10px;
+  height: 10px;
+  background: #cccc;
+}
+
+div .gray:hover {
+  color: red;
+}
+
+.star1 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star2 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star3 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star4 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star5 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star6 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star7 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star8 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star9 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+
+.star10 {
+  background: green;
+  width: 10px;
+  height: 10px;
+}
+/*# sourceMappingURL=main.css.map */

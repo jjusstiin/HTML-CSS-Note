@@ -1,0 +1,21 @@
+@import './_var';
+
+div{
+    @include size(100px,100px);
+    background: $mainColor;
+    outline: 1px black solid;
+    .gray{
+        &:hover{
+            color: red; 
+        }
+        @include size(10px,10px);
+        background: $secondColor;
+    }
+}
+
+@for $i from 1 through 10{
+    .star#{$i}{
+        background: green;
+        @include size(10px,10px);
+    }
+}

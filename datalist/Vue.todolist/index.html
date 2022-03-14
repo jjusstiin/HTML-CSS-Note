@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <input type="text" placeholder="請輸入代辦事項" 
+               @keyup.enter="addTodo(newTodo)" v-model="newTodo">
+        <h2>事項列表</h2>
+        <input type="button" value="清除已完成" @click='clean()' >
+        <ul >
+          <li v-for="todo in todos" >
+              <input type="checkbox" v-on:click='checked(todo)'>
+            {{todo.content}}
+            - <a href="#" @click.prevent="removeTodo(todo)">刪除</a>
+          </li>
+        </ul>
+        <pre>
+            {{this.todos}}
+        </pre>
+    </div>
+    <div id="app2">
+        <span v-bind:title="message">
+          鼠标悬停几秒钟查看此处动态绑定的提示信息！
+        </span>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="todo.js"></script>
+    <script>
+    let app = new Vue({
+        el: '.app',
+        data:{
+        todos:[],
+        newTodo:'',
+    },
+    methods:{
+    addTodo: function(todo){
+      this.todos.push({content:todo,completed: false})
+    },
+    removeTodo: function(todo){
+      this.todos.splice(this.todos.indexOf(todo), 1);
+    },
+    checked: function(todo){
+        if(todo.completed==false){
+            todo.completed=true;
+        }else{
+            todo.completed=false;
+        }
+    },
+    clean: function(){
+        this.todos.forEach(item => {
+            if(item.completed==true){
+                this.todos.splice(this.todos.indexOf(item), 1); 
+            }
+        });
+    } 
+}
+});
+let app2 = new Vue({
+  el: '#app2',
+  data: {
+    message: '页面加载于 ' + new Date().toLocaleString(),
+  }
+})
+    </script>
+</body>
+</html>

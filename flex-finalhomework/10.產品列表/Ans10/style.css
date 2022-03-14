@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.warp{
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+
+}
+.list ul{
+    width: 310px;
+    margin: 5px;
+    margin-right: 15px;
+}
+.list ul p{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    line-height: 70px;
+    background: #37523d;
+}
+.list ul li{
+    outline: #e7eeea 1px solid;
+}
+.list ul li a{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: #37523d;
+    font-weight: 1000;
+    line-height: 70px;
+}
+.list ul li a:hover{
+    background: #e7eeea;
+}
+.item ul{
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item ul li{
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.item ul li div{
+    display: flex;
+}
+.item ul li div p{
+    width: 184px;
+    text-align: center;
+    font-size: 25px;
+    color: #37523d;
+    font-weight: 1000;
+    line-height: 70px;
+    border-left: 1px #e7eeea solid;
+    border-right: 1px #e7eeea solid;
+}
+.item ul li div span{
+    width: 113px;
+    text-align: center;
+    font-size: 25px;
+    color: #37523d;
+    font-weight: 1000;
+    line-height: 70px;
+    border-right: 1px #e7eeea solid;
+}
+.item ul li a{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: #37523d;
+    font-weight: 1000;
+    line-height: 70px;
+    background: #e7eeea;
+}
+.item ul li a:hover{
+    background: #37523d;
+    color: white;
+}

@@ -1,0 +1,28 @@
+.header{
+    margin: auto;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 1000px;
+}
+.menu{
+    display: flex;
+
+}
+.menu li{
+    list-style-type: none;
+    width: 200px;   
+}
+.menu li a{
+    display: block;
+    text-align: center;
+    background: cadetblue;
+    text-decoration: none;
+    color: wheat;
+    padding: 10px;
+}
+.menu li a:hover{
+    background: wheat;
+    color: cadetblue;
+}

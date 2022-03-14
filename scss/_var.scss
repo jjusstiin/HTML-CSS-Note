@@ -1,0 +1,7 @@
+$mainColor : red;
+$secondColor: #cccc;
+
+@mixin size($w,$h){
+    width: $w;
+    height: $h;
+}
